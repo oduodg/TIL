@@ -1,13 +1,8 @@
-""" 
-url = "http://youtube.com"
-rule1 = url[7:]
-rule2 = rule1[:-4]
-rule3 = rule2[:3]
+def std_weight(height, gender):
+    if gender == "남자":
+        weight = pow(height * 0.01, 2) * 22
+    else:
+        weight = pow(height * 0.01, 2) * 21
+    print(f"키 {height}cm {gender}의 표준 체중은 {round(weight,2)}kg 입니다.")
 
-print(rule3 + str(len(rule2))+ str(rule2.count("e")) + "!") 
-"""
-
-url = "http://youtube.com"
-my_str = url.replace("http://", "")
-my_str = my_str[:my_str.index(".")]
-print(my_str[:3] + str(len(my_str)) + str(my_str.count('e')) + "!")
+std_weight(175, "남자")
