@@ -54,7 +54,7 @@ print(f"총 {len(houses)}대의 매물이 있습니다.")
 for house in houses:
     house.show_detail() 
     """
-
+""" 
 chicken = 10 # 남은 치킨 수
 waiting = 1 # 홀 안에는 현재 만석. 대기번호 1부터 시작
 
@@ -84,4 +84,10 @@ while(True):
         break # while 반복문 탈출
     except Exception as err:
         print("알 수 없는 에러가 발생하였습니다.")
-        print(err)
+        print(err) 
+        """
+
+# 퀴즈 10
+
+import byme
+byme.sign()
