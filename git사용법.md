@@ -18,7 +18,10 @@
     7. 레퍼지토리(원격 저장소) 연결
         1. $ git remote add origin 원격저장소URL
         2. $ git remote -v //원격저장소에 잘 연결되었는지 확인
-    8. Github에 최초 푸시(업로드)
+    8.  깃 브랜치 이름 변경
+        1. $ git branch -m old_branch new_branch
+        2. master를 main으로 바꾸려면 $ git branch -m master main 
+    9.  Github에 최초 푸시(업로드)
         1. $ git push -u origin main
 3. 이후 작업
     1. staging 추가
