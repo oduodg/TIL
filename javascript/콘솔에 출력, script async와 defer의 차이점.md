@@ -152,3 +152,46 @@ HTML을 파싱하는 동안 필요한 js 파일을 다운로드 받고, 파싱�
 <img src="/Users/eun/TIL/javascript/img/defer2.png">
 
 파싱하는 동안 필요한 js 파일을 모두 다운로드 받고, 정의한 순서대로 실행하게 된다.
+
+## use strict
+
+TypeScript를 쓸 때는 선언할 필요가 없지만, 순수 Vanila JavaScript를 이용할 때는 사용하는 것이 좋다. `'use strict';` 구문을 추가해서 `strict mode`로 이용하면 JavaScript 엔진이 조금 더 효율적으로 JavaScript를 빠르게 분석할 수 있기 때문에 성능 개선 또한 기대할 수 있다.
+
+```jsx
+// Whole-script strict mode syntax
+// JavaScript is very flexible
+// flexible === dangerous
+// added ECMAScript 5
+//'use strict';
+
+console.log('Hello, World!');
+a = 6;
+```
+
+`'use strict';` 를 선언하지 않았을 때는 선언되지 않은 a라는 변수에 값을 할당해도 브라우저에서 문제되지 않는다.
+
+```jsx
+// Whole-script strict mode syntax
+// JavaScript is very flexible
+// flexible === dangerous
+// added ECMAScript 5
+'use strict';
+
+console.log('Hello')
+a = 6;
+```
+
+`'use strict';` 를 선언하면, 브라우저에서 "a is not defined" 에러가 발생한다. 이 에러를 해결하기 위해서는 `let a;` 로 a를 선언해주어야 한다.
+
+```jsx
+// Whole-script strict mode syntax
+// JavaScript is very flexible
+// flexible === dangerous
+// added ECMAScript 5
+'use strict';
+
+console.log('Hello')
+
+let a; // a를 선언해준다.
+a = 6;
+```
