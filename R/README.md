@@ -9,6 +9,6 @@
 > 목차
 > 
 - [R 기초 사용법](https://github.com/oduodg/TIL/blob/main/R/Application-of-Data-Analysis01.md#r-%EA%B8%B0%EC%B4%88-%EC%82%AC%EC%9A%A9%EB%B2%95)
-    
+  - [R Studio](https://github.com/oduodg/TIL/blob/main/R/Application-of-Data-Analysis01.md#r-studio)
   - [R 기초](https://github.com/oduodg/TIL/blob/main/R/Application-of-Data-Analysis01.md#r-%EA%B8%B0%EC%B4%88)
     
