@@ -40,7 +40,7 @@
     → `apply()` 함수는 사용자 정의 함수와 연계해서 사용 가능하다.
     
 
-### summary, order, sample 함수
+## summary, order, sample 함수
 
 ![03-6](imgs/03-6.png)
 
@@ -51,7 +51,7 @@
 - `sample(1:10, 5, replace=TRUE)` : 1~10까지 5개의 수를 무작위로 뽑음
     - `replace=TRUE` 옵션을 주면 한번 추출한 값을 기존 데이터에 다시 넣고 뽑는다.(복원 추출)
 
-### split, subset, with, merge 함수
+## split, subset, with, merge 함수
 
 ![03-9](imgs/03-9.png)
 
@@ -70,7 +70,7 @@
 
 ![03-14](imgs/03-14.png)
 
-### which, aggregate 함수
+## which, aggregate 함수
 
 ![03-15](imgs/03-15.png)
 
