@@ -3,7 +3,7 @@
 ### MySQL 서버 실행하기
 
 ```bash
-mysql.server stop
+mysql.server start
 ```
 
 ![01-1](imgs/01-1.png)
