@@ -1,9 +1,10 @@
 /* Counter component */
 
 import React,{ useState } from "react"; 
+import OddEvenResult from "./OddEvenResult";
 // 상태를 사용할 수 있는 useState 메서드를 import 해주어야 한다.
 
-const Counter = () => {
+const Counter = ({initialValue}) => { // 비구조화 할당으로 매개변수 전달
     // + 버튼과 - 버튼을 만들어준다.
     // 0에서 출발해서
     // 1씩 증가하고
@@ -13,7 +14,7 @@ const Counter = () => {
     console.log("counter 호출"); // rerender 확인 -> 계속 새로 화면을 그려준다.
 
     // 첫번째 Counter
-    const [count, setCount] = useState(0);
+    const [count, setCount] = useState(initialValue);
     // 0번째 인덱스 count는 "상태의 값"으로 사용된다.
     // 즉 jsx에서 return을 해서 화면에 표시할 수 있다.
     // count의 초기값은 useState의 인자로 전달한다.
@@ -38,8 +39,13 @@ const Counter = () => {
             <h2>{count}</h2>
             <button onClick={onIncrease}>+</button>
             <button onClick={onDecrease}>-</button>
+            <OddEvenResult count={count} />
         </div>
     )
+};
+
+Counter.defaultProps = { // props의 기본 값을 설정해서 props를 전달받지 못할 경우 error 방지
+    initialValue: 0,
 }
 
 export default Counter; // Counter 내보내기
