@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    .timeout {
+      background-color: orange;
+      width: 60%;
+      height: 100px;
+      padding-top: 60px;
+    }
+  </style>
+  <div class="timeout">7초 후에 내가 사라져볼게 얍</div>
+  <script>
+    var timecnt = 7;
+    setInterval(function(){
+      timecnt--;
+      document.querySelector('.timeout')
+      .innerHTML = `${timecnt}초 후에 내가 사라져볼게 얍`;
+      console.log(timecnt);
+    }, 1000); // 1초에 한번씩 반복 수행됨
+
+    setTimeout(function(){
+      document.querySelector('.timeout').style.display = "none";
+    }, 7000) // 7초 뒤에 실행됨 -> 즉 7초 뒤에 사라짐
+
+  </script>
+</body>
+</html>
